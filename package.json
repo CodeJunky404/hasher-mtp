@@ -1,31 +1,34 @@
 {
-    "name": "@makipool/hasher-mtp",
-    "version": "2.0.0",
-    "description": "MTP algorithm hashing and verification functions for NodeJS.",
-    "author": "JCThePants",
-    "main": "index.js",
-    "dependencies": {
-        "bindings": "^1.3.0",
-        "nan": "^2.6.2"
-    },
-    "devDependencies": {
-        "cmake-js": "^4.0.1"
-    },
-    "scripts": {
-        "test": "node test"
-    },
-    "homepage": "https://github.com/MakiPool/hasher-mtp",
-    "bugs": {
-        "url": "https://github.com/MakiPool/hasher-mtp/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/MakiPool/hasher-mtp.git"
-    },
-    "publishConfig": {
-        "registry": "https://npm.pkg.github.com/"
-    },
-    "engines": {
-        "node": ">=10.17.0"
-    }
+  "name": "@makipool/hasher-mtp",
+  "version": "2.0.0",
+  "description": "MTP algorithm hashing and verification functions for NodeJS.",
+  "author": "JCThePants",
+  "main": "index.js",
+  "dependencies": {
+    "bindings": "^1.3.0",
+    "nan": "^2.6.2"
+  },
+  "devDependencies": {
+    "cmake-js": "^4.0.1"
+  },
+  "scripts": {
+    "test": "node test",
+    "install": "node-gyp rebuild"
+  },
+  "homepage": "https://github.com/MakiPool/hasher-mtp",
+  "bugs": {
+    "url": "https://github.com/MakiPool/hasher-mtp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakiPool/hasher-mtp.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "engines": {
+    "node": ">=10.17.0"
+  },
+  "gypfile": true,
+  "license": "MIT"
 }
